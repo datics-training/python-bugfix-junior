@@ -7,11 +7,13 @@ However, it seems that I've run into a problem, with an error message of object 
 
 What I want:
 remove_empty_arrays([1, 2, [], 4]) ➞ [1, 2, 4]
+
+adding feature branch
 '''
+
 
 def remove_empty_arrays(arr):
   return [x for x in arr if len(x) != 0]
 
 
 remove_empty_arrays([1, 2, [], 4])
-
