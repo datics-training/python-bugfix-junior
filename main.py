@@ -10,8 +10,9 @@ remove_empty_arrays([1, 2, [], 4]) ➞ [1, 2, 4]
 '''
 
 def remove_empty_arrays(arr):
-  return [x for x in arr if len(x) != 0]
+  return [x for x in arr if x != []]
 
 
-remove_empty_arrays([1, 2, [], 4])
+print(remove_empty_arrays([1, 2, [], 4]))
+print(remove_empty_arrays(["a", "b", [], [], [1, 2, 3]]))
 
